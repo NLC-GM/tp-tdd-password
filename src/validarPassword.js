@@ -10,6 +10,10 @@ const REGLAS = [
     {
         cumple: (pass) => /[a-z]/.test(pass),
         mensaje: "Contiene al menos 1 letra minúscula."
+    },
+    {
+        cumple: (pass) => /\d/.test(pass),
+        mensaje: "Contiene al menos 1 número."
     }
 ];
 
