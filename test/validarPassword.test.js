@@ -42,3 +42,11 @@ describe('Ciclo 6: no contiene espacios', () => {
         expect(resultado.errores).toContain("No debe contener espacios.");
     });
 });
+describe('Ciclo 7: Nombre de usuario', () => {
+    test('Debería ser invalida si la contraseña contiene el nombre de usuario', () => {
+        // Probamos con password que contiene "nelson" y username "nelson"
+        const resultado = validarPassword('Nelson123!', 'nelson'); 
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain("No puede contener el nombre de usuario.");
+    });
+});

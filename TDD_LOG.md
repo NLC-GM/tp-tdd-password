@@ -17,3 +17,5 @@ Trabajo Práctico Validador de Contraseñas
 
 |5| caracater especial| Tests: 1 failed, 4 passed, 5 total|agregue TIENE_SIMBOLO = /[!@#$%^&*(),.?":{}|<>]/; a las regex|no aplico |Tests:5 passed, 5 total
 |6| sin espacios| Tests: 1 failed, 5 passed, 6 total| agregue TIENE_ESPACIOS = /\s/ que no debe cumplirse| No aplica| Tests: 6 passed, 6 total
+|7| no contener el nombre de usuario| Ciclo 7: Nombre de usuario
+    × Debería ser invalida si la contraseña contiene el nombre de usuario (1 ms)|
