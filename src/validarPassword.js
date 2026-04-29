@@ -30,11 +30,15 @@ const REGLAS = [
     {
         cumple: (pass) => !REGLAS_REGEX.TIENE_ESPACIOS.test(pass),
         mensaje: "No debe contener espacios."
+    },
+    { 
+    cumple: (pass, username) => !username || !pass.toLowerCase().includes(username.toLowerCase()), 
+    mensaje: "No puede contener el nombre de usuario." 
     }
 ];
 
 function validarPassword(password, usernameOpcional) {
-    const reglasIncumplidas = REGLAS.filter(regla => !regla.cumple(password));
+    const reglasIncumplidas = REGLAS.filter(regla => !regla.cumple(password, usernameOpcional));
     const errores = reglasIncumplidas.map(regla => regla.mensaje);
     return {
         esValida: errores.length === 0,
