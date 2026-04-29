@@ -21,3 +21,10 @@ describe('ciclo 3: Minúsculas', () => {
         expect(resultado.errores).toContain("Contiene al menos 1 letra minúscula.");
     });
 });
+describe('Ciclo 4: 1 numero al menos', () => {
+    test('Debería ser invalida si no tiene al menos un número', () => {
+        const resultado = validarPassword('Password');
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain("Contiene al menos 1 número.");
+    });
+});

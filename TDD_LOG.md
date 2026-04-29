@@ -12,3 +12,5 @@ Trabajo Práctico Validador de Contraseñas
 |2|Validar que contenga al menos una mayúscula| ciclo 2: Mayúscula × Debería ser invalida si no tiene al menos una mayúscula (2 ms)|Agregué la regla /[A-Z]/ al array de REGLAS|NO| passTests: 2 passed, 2 total|
 |3|validar existencia de minúsculas|ciclo 3: Minúsculas
     × Debería ser invalida si no tiene al menos una minúscula (2 ms)| Agregué la regla /[a-z]/ al array de REGLAS|no aplica| Tests: 3 passed, 3 total
+|4|Validar existencia de un numero| Ciclo 4: 1 numero al menos
+    × Debería ser invalida si no tiene al menos un número (1 ms)|
