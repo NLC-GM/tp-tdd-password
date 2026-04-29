@@ -14,3 +14,10 @@ describe('ciclo 2: Mayúsculas', () => {
         expect(resultado.errores).toContain("Contiene al menos 1 letra mayúscula.");
     });
 });
+describe('ciclo 3: Minúsculas', () => {
+    test('Debería ser invalida si no tiene al menos una minúscula', () => {
+        const resultado = validarPassword('MAYUSCULAS123');
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain("Contiene al menos 1 letra minúscula.");
+    });
+});
