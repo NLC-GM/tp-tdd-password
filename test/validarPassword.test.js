@@ -28,3 +28,10 @@ describe('Ciclo 4: 1 numero al menos', () => {
         expect(resultado.errores).toContain("Contiene al menos 1 número.");
     });
 });
+describe('Ciclo 5: caracteres especiales', () => {
+    test('Debería ser invalida si no tiene al menos un carácter especial', () => {
+        const resultado = validarPassword('Password123'); // No tiene símbolos
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain("Contiene al menos 1 carácter especial.");
+    });
+});
