@@ -9,6 +9,6 @@ Trabajo Práctico Validador de Contraseñas
 ## Registro de ciclos TDD
 | Ciclo | Test agregado (nombre y objetivo) | Evidencia Rojo (error/salida) | Cambio mínimo aplicado (Verde) | Refactor realizado | Evidencia final (tests en verde) |
 |1| Estructura: Verificar retorno de objeto `{esValida, errores}`.| TypeError: validarPassword is not a function| Creé la función y agregué validación de longitud| no aplico| pass
-|2|Validar que contenga al menos una mayúscula| ciclo 2: Mayúscula × Debería ser invalida si no tiene al menos una mayúscula (2 ms)|Agregué la regla /[A-Z]/ al array de REGLAS en         validarPassword.js.|NO| passTests: 2 passed, 2 total|
+|2|Validar que contenga al menos una mayúscula| ciclo 2: Mayúscula × Debería ser invalida si no tiene al menos una mayúscula (2 ms)|Agregué la regla /[A-Z]/ al array de REGLAS|NO| passTests: 2 passed, 2 total|
 |3|validar existencia de minúsculas|ciclo 3: Minúsculas
-    × Debería ser invalida si no tiene al menos una minúscula (2 ms)|
+    × Debería ser invalida si no tiene al menos una minúscula (2 ms)| Agregué la regla /[a-z]/ al array de REGLAS|no aplica| Tests: 3 passed, 3 total

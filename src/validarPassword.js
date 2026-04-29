@@ -6,6 +6,10 @@ const REGLAS = [
     {
         cumple: (pass) => /[A-Z]/.test(pass), 
         mensaje: "Contiene al menos 1 letra mayúscula."
+    },
+    {
+        cumple: (pass) => /[a-z]/.test(pass),
+        mensaje: "Contiene al menos 1 letra minúscula."
     }
 ];
 
