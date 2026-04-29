@@ -3,7 +3,8 @@ const REGLAS_REGEX = {
     MINUSCULA: /[a-z]/,
     NUMERO: /\d/,
     TIENE_SIMBOLO: /[!@#$%^&*(),.?":{}|<>]/,
-    TIENE_ESPACIOS: /\s/
+    TIENE_ESPACIOS: /\s/,
+    TIENE_CONSECUTIVOS: /(.)\1\1/
 };
 
 const REGLAS = [
@@ -34,6 +35,10 @@ const REGLAS = [
     { 
     cumple: (pass, username) => !username || !pass.toLowerCase().includes(username.toLowerCase()), 
     mensaje: "No puede contener el nombre de usuario." 
+    },
+    {
+        cumple: (pass) => !REGLAS_REGEX.TIENE_CONSECUTIVOS.test(pass),
+        mensaje: "No debe contener 3 o más caracteres iguales consecutivos."
     }
 ];
 
