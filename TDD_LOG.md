@@ -13,4 +13,4 @@ Trabajo Práctico Validador de Contraseñas
 |3|validar existencia de minúsculas|ciclo 3: Minúsculas
     × Debería ser invalida si no tiene al menos una minúscula (2 ms)| Agregué la regla /[a-z]/ al array de REGLAS|no aplica| Tests: 3 passed, 3 total
 |4|Validar existencia de un numero| Ciclo 4: 1 numero al menos
-    × Debería ser invalida si no tiene al menos un número (1 ms)|agregue regla /\d/| |Tests: 4 passed, 4 total
+    × Debería ser invalida si no tiene al menos un número (1 ms)|agregue regla /\d/|extraigo las regex para que el codigo sea mas legible y facil de mantener |Tests: 4 passed, 4 total

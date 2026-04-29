@@ -1,18 +1,24 @@
+const REGLAS_REGEX = {
+    MAYUSCULA: /[A-Z]/,
+    MINUSCULA: /[a-z]/,
+    NUMERO: /\d/
+};
+
 const REGLAS = [
     {
         cumple: (pass) => pass.length >= 8,
         mensaje: "Mínimo 8 caracteres"
     },
     {
-        cumple: (pass) => /[A-Z]/.test(pass), 
+        cumple: (pass) => REGLAS_REGEX.MAYUSCULA.test(pass), 
         mensaje: "Contiene al menos 1 letra mayúscula."
     },
     {
-        cumple: (pass) => /[a-z]/.test(pass),
+        cumple: (pass) => REGLAS_REGEX.MINUSCULA.test(pass),
         mensaje: "Contiene al menos 1 letra minúscula."
     },
     {
-        cumple: (pass) => /\d/.test(pass),
+        cumple: (pass) => REGLAS_REGEX.NUMERO.test(pass),
         mensaje: "Contiene al menos 1 número."
     }
 ];
