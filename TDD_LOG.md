@@ -20,4 +20,4 @@ Trabajo Práctico Validador de Contraseñas
 |7| no contener el nombre de usuario| Ciclo 7: Nombre de usuario
     × Debería ser invalida si la contraseña contiene el nombre de usuario (1 ms)|Agregué validación con .includes() y pasé el parámetro username al filtro| no aplico| Tests:       7 passed, 7 total
 |8| sin caracteres seguidos| Regla 8: Caracteres consecutivos
-    × Debería ser invalida si tiene 3 letras iguales seguidas (2 ms)| 
+    × Debería ser invalida si tiene 3 letras iguales seguidas (2 ms)| agregue TIENE_CONSECUTIVOS = /(.)\1\1/ a las reglas y eso no debe cumplirse| no aplica|Tests:       8 passed, 8 total
