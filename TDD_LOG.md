@@ -1,0 +1,12 @@
+# TDD_LOG
+Trabajo Práctico Validador de Contraseñas
+
+## Datos del estudiante
+**Nombre y apellido:** Nelson Chen
+**Fecha:** 29 de Abril de 2026
+**Curso/Grupo:** 
+
+## Registro de ciclos TDD
+| Ciclo | Test agregado (nombre y objetivo) | Evidencia Rojo (error/salida) | Cambio mínimo aplicado (Verde) | Refactor realizado | Evidencia final (tests en verde) |
+|1| Estructura: Verificar retorno de objeto `{esValida, errores}`.| TypeError: validarPassword is not a function| Creé la función y agregué validación de longitud| no aplico| pass
+|2|
