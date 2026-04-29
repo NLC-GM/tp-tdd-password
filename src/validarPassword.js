@@ -2,7 +2,8 @@ const REGLAS_REGEX = {
     MAYUSCULA: /[A-Z]/,
     MINUSCULA: /[a-z]/,
     NUMERO: /\d/,
-    TIENE_SIMBOLO: /[!@#$%^&*(),.?":{}|<>]/
+    TIENE_SIMBOLO: /[!@#$%^&*(),.?":{}|<>]/,
+    TIENE_ESPACIOS: /\s/
 };
 
 const REGLAS = [
@@ -25,6 +26,10 @@ const REGLAS = [
     {
         cumple: (pass) => REGLAS_REGEX.TIENE_SIMBOLO.test(pass),
         mensaje: "Contiene al menos 1 carácter especial."
+    },
+    {
+        cumple: (pass) => !REGLAS_REGEX.TIENE_ESPACIOS.test(pass),
+        mensaje: "No debe contener espacios."
     }
 ];
 
