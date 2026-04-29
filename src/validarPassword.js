@@ -1,7 +1,8 @@
 const REGLAS_REGEX = {
     MAYUSCULA: /[A-Z]/,
     MINUSCULA: /[a-z]/,
-    NUMERO: /\d/
+    NUMERO: /\d/,
+    TIENE_SIMBOLO: /[!@#$%^&*(),.?":{}|<>]/
 };
 
 const REGLAS = [
@@ -20,6 +21,10 @@ const REGLAS = [
     {
         cumple: (pass) => REGLAS_REGEX.NUMERO.test(pass),
         mensaje: "Contiene al menos 1 número."
+    },
+    {
+        cumple: (pass) => REGLAS_REGEX.TIENE_SIMBOLO.test(pass),
+        mensaje: "Contiene al menos 1 carácter especial."
     }
 ];
 
