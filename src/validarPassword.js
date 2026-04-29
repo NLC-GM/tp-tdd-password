@@ -33,8 +33,8 @@ const REGLAS = [
         mensaje: "No debe contener espacios."
     },
     { 
-    cumple: (pass, username) => !username || !pass.toLowerCase().includes(username.toLowerCase()), 
-    mensaje: "No puede contener el nombre de usuario." 
+        cumple: (pass, username) => !username || !pass.toLowerCase().includes(username.toLowerCase()), 
+        mensaje: "No puede contener el nombre de usuario." 
     },
     {
         cumple: (pass) => !REGLAS_REGEX.TIENE_CONSECUTIVOS.test(pass),

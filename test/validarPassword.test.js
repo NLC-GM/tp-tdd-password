@@ -52,7 +52,7 @@ describe('Ciclo 7: Nombre de usuario', () => {
 });
 describe('Regla 8: Caracteres consecutivos', () => {
     test('Debería ser invalida si tiene 3 letras iguales seguidas', () => {
-        const resultado = validarPassword('Abc123aaa!'); // Tiene "aaa"
+        const resultado = validarPassword('Abc123aaa!');
         expect(resultado.esValida).toBe(false);
         expect(resultado.errores).toContain("No debe contener 3 o más caracteres iguales consecutivos.");
     });
