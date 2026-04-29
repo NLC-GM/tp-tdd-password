@@ -16,3 +16,4 @@ Trabajo Práctico Validador de Contraseñas
     × Debería ser invalida si no tiene al menos un número (1 ms)|agregue regla /\d/|extraigo las regex para que el codigo sea mas legible y facil de mantener |Tests: 4 passed, 4 total
 
 |5| caracater especial| Tests: 1 failed, 4 passed, 5 total|agregue TIENE_SIMBOLO = /[!@#$%^&*(),.?":{}|<>]/; a las regex|no aplico |Tests:5 passed, 5 total
+|6| sin espacios| Tests: 1 failed, 5 passed, 6 total| 

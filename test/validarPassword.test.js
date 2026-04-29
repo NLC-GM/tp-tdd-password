@@ -35,3 +35,10 @@ describe('Ciclo 5: caracteres especiales', () => {
         expect(resultado.errores).toContain("Contiene al menos 1 carácter especial.");
     });
 });
+describe('Ciclo 6: no contiene espacios', () => {
+    test('Debería ser invalida si contiene espacios', () => {
+        const resultado = validarPassword('Password 123!'); 
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain("No debe contener espacios.");
+    });
+});
