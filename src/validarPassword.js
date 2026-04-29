@@ -2,6 +2,10 @@ const REGLAS = [
     {
         cumple: (pass) => pass.length >= 8,
         mensaje: "Mínimo 8 caracteres"
+    },
+    {
+        cumple: (pass) => /[A-Z]/.test(pass), 
+        mensaje: "Contiene al menos 1 letra mayúscula."
     }
 ];
 

@@ -7,3 +7,10 @@ describe('Ciclo 1: Longitud mínima', () => {
         expect(resultado.errores).toContain("Mínimo 8 caracteres");
     });
 });
+describe('ciclo 2: Mayúsculas', () => {
+    test('Debería ser invalida si no tiene al menos una mayúscula', () => {
+        const resultado = validarPassword('password123');
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain("Contiene al menos 1 letra mayúscula.");
+    });
+});
